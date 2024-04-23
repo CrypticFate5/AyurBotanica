@@ -8,7 +8,7 @@ from flask_cors import CORS
 
 app=Flask(__name__)
 CORS(app)
-model=load_model("AyurBotClassEf.h5",custom_objects={'KerasLayer':hub.KerasLayer})
+model=load_model("../Model/AyurBotClassEf.h5",custom_objects={'KerasLayer':hub.KerasLayer})
 classes=os.listdir("/mnt/d/Academics/Projects/DL/AyurBotanica-TransferLearningModel/dataset/")
 n=len(classes)
 print(n)
